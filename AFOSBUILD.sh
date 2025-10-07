@@ -1,6 +1,6 @@
 rm -rf /opt/ANDRAX/nim
 
-wget https://nim-lang.org/download/nim-2.2.2.tar.xz
+wget https://nim-lang.org/download/nim-2.2.4.tar.xz
 
 if [ $? -eq 0 ]
 then
@@ -11,7 +11,7 @@ else
   exit 1
 fi
 
-tar -xJf nim-2.2.2.tar.xz
+tar -xJf nim-2.2.4.tar.xz
 
 if [ $? -eq 0 ]
 then
@@ -24,7 +24,7 @@ fi
 
 mkdir /opt/ANDRAX/nim
 
-cd nim-2.2.2
+cd nim-2.2.4
 
 sh build.sh
 
